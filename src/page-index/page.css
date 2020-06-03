@@ -1,0 +1,80 @@
+body {
+background-color:white;
+}
+nav {
+  background-color:#191720;
+  mix-blend-mode: normal;
+}
+.item-Headphones {
+position: relative;
+width: 1440px;
+height: 616px;
+display: flex;
+background: #2B2835;
+}
+.buy{
+position: absolute;
+left: 67%;
+right: 0%;
+top: 50%;
+bottom: 0%;
+height: 41px;
+width:170px;
+background: #00B0FF;
+border-radius: 100px;
+text-transform: uppercase;
+font-style:bold;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+border-color:#00B0FF;
+}
+.buy:hover{
+  background: white;
+
+}
+#price {
+  color:  #F2F2F2;
+  position: absolute;
+height: 49px;
+left: 55%;
+right: 70.08%;
+top: 49%;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 49px;
+}
+#card {
+  width: 100%;
+  position: absolute;
+  left: 55%;
+  top: 58%;
+  bottom: 0%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  padding-bottom: 40px;
+  display: flex;
+  color: #00B0FF;
+/* identical to box height, or 151% */
+
+
+color: #00B0FF;
+}
+h1 {
+position: absolute;
+height: 86px;
+left: 797px;
+right: 0%;
+top:154px;
+color:white;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 43px;
+}
