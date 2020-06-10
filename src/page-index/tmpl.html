@@ -10,19 +10,27 @@
         content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
 <body>
-
   <%= require('html-loader!../partials/nav.html') %>
-
-<div class="main_content">
-  <div class="content_headphone">
-    <h2>Beats Studio3 Wireless</h2>
-    <h1>Experience your<br>music like never before</h1>
-    <span id="price">$299.95</span><button class="buy">Buy now</button>
-    <span id="card">$60 Apple Music gift card with purchase of select Beats products.*</span>
+<div class="container">
+  <div class="content__headphone">
+    <div class="content__headphone headphone-title">
+        Beats Studio3 Wireless
+    </div>
+    <div class="content__headphone headphone-text">
+      Experience your<br> music like never before.
+    </div>
+    <div class="content__headphone headphone-price">
+      $299.95
+    </div>
+    <div class="content__headphone headphone-button">
+      <button class="button" type="button" name="button">buy now</button>
+    </div>
+    <div class="content__headphone headphone-description">
+      $60 Apple Music gift card with purchase of select Beats products.*
+    </div>
   </div>
-  <div class="headphone_image">
+  <div class="headphone__image">
     <img src="images/icons/headphone.png">
   </div>
   <div class="wirelles_speaker">
@@ -53,9 +61,7 @@
     <input class="email" type="email" name="" value="Enter your email">
     <button class="item_signup">sign up</button>
   </div>
-
 </div>
-
   <%= require('html-loader!../partials/footer.html') %>
 </body>
 </html>

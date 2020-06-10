@@ -1,53 +1,65 @@
-.main_content {
+.container {
   position: relative;
-  max-width: 1440px;
+  margin: 0 auto;
   height: 5130px;
   background: #FFFFFF;
 }
-.content_headphone {
+.content__headphone {
   position: relative;
-  width: 1440px;
+  width: 100%;
   height: 616px;
   display: flex;
+  flex-direction: column;
   background: #2B2835;
-}
+  align-items: flex-end;
+  justify-content: space-between;
+  color: white;
 
-#price {
-  color:  #F2F2F2;
-  position: absolute;
-  height: 49px;
-  left: 55%;
-  right: 70.08%;
-  top: 49%;
+}
+.headphone-title{
+  position: relative;
+  top: 27%;
+  right: 30.5%;
   font-family: Montserrat;
   font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  letter-spacing: 1px;
+}
+.headphone-text {
+  font-family: Montserrat;
+  top:12%;
+  right: 10.1%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 43px;
+  /* or 107% */
+  position: relative;
+  color: #FFFFFF;
+}
+.headphone-price  {
+  display: flex;
+  color: #FFFFFF;
+  top:9%;
+  right: 34.5%;
+  position: relative;
+  font-family: Montserrat;
   font-weight: normal;
   font-size: 40px;
   line-height: 49px;
 }
 
-#card {
-
-  position: relative;
-  left: 55%;
-  top: 58%;
-  bottom: 0%;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  padding-bottom: 40px;
-  display: flex;
-  color: #00B0FF;
-}
-.buy{
+.headphone-button button{
   position: absolute;
-  left: 67%;
-  right: 0%;
-  top: 50%;
-  bottom: 0%;
+  display: block;
+  bottom: 117%;
+  right:20%;
   height: 41px;
   width:170px;
+  color: black;
   background: #00B0FF;
   border-radius: 100px;
   text-transform: uppercase;
@@ -59,16 +71,32 @@
   border-color:#00B0FF;
 }
 
-.buy:hover{
+.button:hover{
   background: white;
+  color: black;
+  border-radius: 100px;
+    border-color:#FFF;
 }
-.headphone_image{
+.headphone-description{
+  position: relative;
+right: 14.68%;
+bottom: 22%;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height, or 151% */
+
+
+color: #00B0FF;
+}
+.headphone__image{
   position: absolute;
   width: 856px;
   height: 766px;
   left: 0px;
   top: 0px;
-  z-index: 1;
   display: block;
   }
 .wirelles_speaker{
@@ -120,26 +148,6 @@ padding-left: 97px;
 
 }
 
-#h1 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 55px;
-  position: absolute;
-  margin-top: 52px;
-}
-
-#h2 {
-  margin-top: 107px;
-  position: absolute;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-}
-
 .email {
   width: 507px;
   height: 36px;
@@ -150,7 +158,6 @@ padding-left: 97px;
   justify-content: center;
   margin: 200px auto;
   opacity: 0.31;
-
 }
 
 .item_sugnup, button{
@@ -189,4 +196,41 @@ padding-left: 97px;
   font-size: 24px;
   line-height: 31px;
   color: #FFFFFF;
+}
+.navbar__icons{
+  position: absolute;
+display: flex;
+align-items: stretch;
+height: 300px;
+}
+.search-icon {
+  background: url("../../images/icons/loop.svg") no-repeat;
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  left: 1079px;
+  top: 16px;
+  z-index: 10;
+
+}
+.navbar__logo {
+  left: 94px;
+  width: 49.87px;
+  height: 49.87px;
+  z-index: 10;
+  top: 13px;
+  position: fixed;
+  background: url("../../images/icons/logo.svg") no-repeat;
+}
+.logo-dot {
+  position: fixed;
+  background: url("../../images/icons/logocircus.svg") no-repeat;
+  left:111px;
+  top:30px;
+}
+.user-icon {
+  background: url("../../images/icons/icon.svg") no-repeat;
+}
+.shape-icon {
+  background: url("../../images/icons/Shape.svg") no-repeat;
 }
