@@ -350,6 +350,9 @@ padding-left: 97px;
 .navbar__menu ul {
   display: flex;
 }
+.navbar__menu ul:not(first-child){
+  margin-right: 140px;
+}
 .navbar__icons{
 position: absolute;
 display: flex;
