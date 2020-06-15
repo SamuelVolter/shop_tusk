@@ -227,7 +227,7 @@ padding-left: 20%;
   /* identical to box height */
   color: #030303;
 }
-.item-content h1 {
+.item-content span {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -292,7 +292,7 @@ padding-left: 20%;
 .footer a {
     text-decoration:none;
 }
-.Products h1 a {
+.Products span {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -311,7 +311,7 @@ padding-left: 20%;
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.Support h1 a{
+.Support span{
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -329,7 +329,7 @@ padding-left: 20%;
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.footer-Company h1 a{
+.footer-Company span{
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
