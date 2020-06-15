@@ -208,8 +208,9 @@ padding-left: 20%;
 
 }
 .footer-logo {
+
   margin-left: 135px;
-  margin-top: 55px;
+
 }
 .last__item {
 
@@ -292,7 +293,7 @@ padding-left: 20%;
 .footer a {
     text-decoration:none;
 }
-.Products h1 {
+.Products h1 a {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -301,7 +302,6 @@ padding-left: 20%;
   color: #FFFFFF;
 }
 .Products  a{
-
   margin-top: 20px 0;
   opacity: 0.47;
   font-family: Montserrat;
@@ -312,7 +312,7 @@ padding-left: 20%;
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.Support a{
+.Support h1 a{
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -330,7 +330,7 @@ padding-left: 20%;
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.footer-Company a{
+.footer-Company h1 a{
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
