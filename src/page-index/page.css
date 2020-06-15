@@ -11,15 +11,14 @@
   display: flex;
   flex-direction: column;
   background: #2B2835;
-  align-items: flex-end;
-  justify-content: space-between;
+  align-items: center;
+  justify-content:center;
+  flex-grow: 10px;
   color: white;
 
 }
 .headphone-title{
-  position: relative;
-  top: 27%;
-  right: 30.5%;
+  position:inherit;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -30,8 +29,6 @@
 }
 .headphone-text {
   font-family: Montserrat;
-  top:12%;
-  right: 10.1%;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -41,10 +38,8 @@
   color: #FFFFFF;
 }
 .headphone-price  {
-  display: flex;
+
   color: #FFFFFF;
-  top:9%;
-  right: 34.5%;
   position: relative;
   font-family: Montserrat;
   font-weight: normal;
@@ -55,8 +50,6 @@
 .headphone-button button{
   position: absolute;
   display: block;
-  bottom: 117%;
-  right:20%;
   height: 41px;
   width:170px;
   color: black;
@@ -79,17 +72,14 @@
 }
 .headphone-description{
   position: relative;
-right: 14.68%;
-bottom: 22%;
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 13px;
-line-height: 20px;
-/* identical to box height, or 151% */
-
-
-color: #00B0FF;
+  flex-direction: row;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height, or 151% */
+  color: #00B0FF;
 }
 .headphone__image{
   position: absolute;
@@ -113,6 +103,7 @@ height: 844px;
 background: url("../../images/background.png") no-repeat;
 display: flex;
 z-index: 10;
+background-size: cover;
 
 
 }
@@ -200,13 +191,12 @@ z-index: 10;
 
 .item_pods {
 display: grid;
-
 grid-template-columns: repeat(4, 290px);
 grid-auto-rows: minmax(100px, auto);
 grid-column-gap: 20px;
 grid-row-gap: 1em;
 align-content: center;
-padding-left: 97px;
+padding-left: 20%;
 }
 
 .item_box {
@@ -217,7 +207,10 @@ padding-left: 97px;
   height: 543px;
 
 }
-
+.footer-logo {
+  margin-left: 135px;
+  margin-top: 55px;
+}
 .last__item {
 
   position: relative;
@@ -366,10 +359,7 @@ padding-left: 97px;
   /* or 129% */
   color: #FFFFFF;
 }
-.footer-copyright{
-  display: inline-block;
 
-}
 
 .navbar__menu{
   font-family: 'Montserrat', sans-serif;
@@ -498,6 +488,7 @@ color: #2B2835;
 }
 .footer-copyright span {
   font-family: Montserrat;
+  margin: 20px 0;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
