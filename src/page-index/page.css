@@ -220,7 +220,6 @@
   margin-top: 30px;
   display: block;
   position: relative;
-  justify-content: center;
 }
 .text_title {
   padding: 20px 0;
@@ -523,7 +522,7 @@
   margin: 205px 0;
   padding-left: 93px;
   color: #030303;
-  background: #F4F4F4
+  background: #F4F4F4;
 }
 .title_beats {
   font-family: Montserrat;
