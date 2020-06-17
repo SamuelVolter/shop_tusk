@@ -1,7 +1,6 @@
 .container {
   position: relative;
   margin: 0 auto;
-
   background: #FFFFFF;
 }
 .content__headphone {
@@ -24,7 +23,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height */
   letter-spacing: 1px;
 }
 .headphone-text {
@@ -68,7 +66,7 @@
   background: white;
   color: black;
   border-radius: 100px;
-    border-color:#FFF;
+  border-color:#FFF;
 }
 .headphone-description{
   position: relative;
@@ -90,22 +88,16 @@
   display: block;
   }
 .wirelles_speaker {
-
   height: 844px;
   display: block;
 }
-
-
 .content__powerbeats {
-
-width: 100%;
-height: 844px;
-background: url("../../images/background.png") no-repeat;
-display: flex;
-z-index: 10;
-background-size: cover;
-
-
+  width: 100%;
+  height: 844px;
+  background: url("../../images/background.png") no-repeat;
+  display: flex;
+  z-index: 10;
+  background-size: cover;
 }
 .powerbeats-image {
   background: url("../../images/powerbeats.png")no-repeat;
@@ -132,7 +124,6 @@ background-size: cover;
   display: flex;
 }
 .powerbeats_button input{
-
   margin: auto 0;
   color: white;
   margin-left: 41px;
@@ -144,13 +135,12 @@ background-size: cover;
 }
 .powerbeats_price{
   justify-content: center;
-margin: auto 0;
+  margin: auto 0;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
   line-height: 49px;
-  /* identical to box height */
   color: #FFFF00;
 }
 .powerbeats-title {
@@ -163,11 +153,7 @@ margin: auto 0;
   font-weight: bold;
   font-size: 50px;
   line-height: 55px;
-/* identical to box height, or 110% */
-text-transform: uppercase;
-}
-.powerbeat-info {
-
+  text-transform: uppercase;
 }
  .powerbeat-button {
   justify-content: center;
@@ -191,12 +177,11 @@ text-transform: uppercase;
   display: flex;
   justify-content: center;
   position: relative;
-
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 13px;
-line-height: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
 }
 .powerbeat-price {
   display: flex;
@@ -208,25 +193,23 @@ line-height: 20px;
   line-height: 49px;
 }
 .content_beats{
-position: relative;
-width:100%;
-height: 844px;
-background: #F4F4F4;
-mix-blend-mode: normal;
-display: block;
-z-index: 10;
+  position: relative;
+  width:100%;
+  height: 844px;
+  background: #F4F4F4;
+  mix-blend-mode: normal;
+  display: block;
+  z-index: 10;
 }
-
 .item_pods {
-display: grid;
-grid-template-columns: repeat(4, 290px);
-grid-auto-rows: minmax(100px, auto);
-grid-column-gap: 20px;
-grid-row-gap: 1em;
-margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 290px);
+  grid-auto-rows: minmax(100px, auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 1em;
+  margin-left: 10%;
 }
 .image_title {
-
   display: block;
   position: relative;
   justify-content: center;
@@ -260,7 +243,6 @@ margin-left: 10%;
   color: #030303;
   }
 .pods_price{
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -268,10 +250,11 @@ margin-left: 10%;
   line-height: 30px;
   color: #9D8220;
   }
-  .price_button {
-padding: 10px;
-text-align: center;
-justify-content: center;
+
+.price_button {
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
   }
 .price_button input{
   background: #000000;
@@ -286,7 +269,6 @@ justify-content: center;
   font-size: 14px;
   line-height: 17px;
   padding-left: 10px;
-  /* identical to box height */
 }
 .price_button input:hover{
   background: blue;
@@ -298,7 +280,6 @@ justify-content: center;
   font-weight: 100;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
 }
 .item_box {
   position: relative;
@@ -320,7 +301,6 @@ justify-content: center;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
   color: #030303;
 }
 .item-content span {
@@ -329,7 +309,6 @@ justify-content: center;
   font-weight: bold;
   font-size: 50px;
   line-height: 55px;
-  /* identical to box height, or 110% */
   color: #2B2835;
 }
 .item-content li {
@@ -369,8 +348,6 @@ justify-content: center;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
-
   text-transform: uppercase;
 }
 .footer {
@@ -380,14 +357,13 @@ justify-content: center;
   grid-gap:1em;
   grid-template-columns:repeat(5, 1fr);
   grid-template-rows: 1fr ;
-
   padding-top:10px;
   background: #2B2835;
   text-decoration: none;
 }
 
 .footer a {
-    text-decoration:none;
+  text-decoration:none;
 }
 .products__title span {
 
@@ -433,7 +409,6 @@ justify-content: center;
   font-weight: 600;
   font-size: 24px;
   line-height: 31px;
-  /* or 129% */
   color: #FFFFFF;
 }
 .footer-Company a{
@@ -444,7 +419,6 @@ justify-content: center;
   font-weight: 100;
   font-size: 14px;
   line-height: 31px;
-  /* or 129% */
   color: #FFFFFF;
 }
 .footer-icons {
@@ -453,7 +427,6 @@ justify-content: center;
   font-weight: 600;
   font-size: 16px;
   line-height: 31px;
-  /* or 129% */
   color: #FFFFFF;
 }
 
@@ -480,15 +453,13 @@ justify-content: center;
   margin-right: 140px;
 }
 .navbar__icons{
-position: absolute;
-display: flex;
-/* flex-direction: row-reverse; */
-justify-content: flex-end;
-margin: 0 auto;
-padding: 0 20px;
-width: 100%;
-height: 300px;
-
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  height: 300px;
 }
 .search-icon {
   background: url("../../images/icons/loop.svg")no-repeat ;
@@ -497,14 +468,12 @@ height: 300px;
   width: 25px;
   height: 25px;
   margin: 28px -200px;
-  /* left: 1079px;
-  top: 16px; */
   z-index: 10;
 }
 .user-icon {
   display: block;
   position: fixed;
-    margin: 28px -130px;
+  margin: 28px -130px;
   width: 25px;
   height: 25px;
   z-index: 10;
@@ -513,9 +482,9 @@ height: 300px;
 .shape-icon {
   position: fixed;
   width: 25px;
-    margin: 28px -50px;
+  margin: 28px -50px;
   height: 25px;
-display:block;
+  display:block;
   z-index: 10;
   background: url("../../images/icons/Shape.svg")no-repeat;
 }
@@ -542,31 +511,30 @@ display:block;
   width: 100%;
   grid-template-columns: 844px 660px;
   grid-auto-rows: 844px 700px;
-  /* border: red solid 2px; */
-  background: rgba(244, 244, 244, 0.53);
+  background: #F4F4F4;
 }
 .beats-text {
-position: relative;
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 27px;
-margin: 205px 0;
-padding-left: 93px;
-color: #030303;
-background: rgba(244, 244, 244, 0.53)
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+  margin: 205px 0;
+  padding-left: 93px;
+  color: #030303;
+  background: #F4F4F4
 }
 .title_beats {
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 50px;
-line-height: 55px;
-/* identical to box height, or 110% */
-margin: 20px 0;
-color: #2B2835;
-}
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 55px;
+  /* identical to box height, or 110% */
+  margin: 20px 0;
+  color: #2B2835;
+  }
 .beats_button {
   display: flex;
   padding: 86px 0;
@@ -585,22 +553,19 @@ color: #2B2835;
 }
 .beats_price{
   display: flex;
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 40px;
-line-height: 49px;
-/* identical to box height */
-color: #000000;
-
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 49px;
+  /* identical to box height */
+  color: #000000;
 }
 .beats-img {
   background: url("../../images/head.png")no-repeat;
   position: relative;
   justify-content: center;
   right:100px;
-  /* margin: 0 25px; */
-  /* padding: 0 25px; */
 }
 .footer-copyright {
   display: grid;
@@ -609,7 +574,6 @@ color: #000000;
   margin: 0;
   align-items: center;
   width: auto;
-  /* identical to box height */
   background-color: #2B2835;
 }
 .footer-copyright span {
@@ -621,11 +585,7 @@ color: #000000;
   line-height: 15px;
   padding: 0 20px;
   width: 100%;
-/* identical to box height */
-
-
-color: #FFFFFF;
-
-mix-blend-mode: normal;
-opacity: 0.31;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.31;
 }
