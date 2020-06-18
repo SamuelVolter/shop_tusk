@@ -14,7 +14,7 @@
 <body>
   <%= require('html-loader!../partials/nav.html') %>
 <div class="container">
-  <div class="content__headphone">
+  <section class="content__headphone">
     <div class="content__headphone headphone-title">
         Beats Studio3 Wireless
     </div>
@@ -30,17 +30,21 @@
     <div class="content__headphone headphone-description">
       $60 Apple Music gift card with purchase of select Beats products.*
     </div>
-  </div>
   <div class="headphone__image">
     <img src="images/icons/headphone.png">
   </div>
+    </section>
+
+</div>
+
   <section class="wirelles_speaker">
     <div class="wirelles_intro">
       portable wirelles_speaker
       jghghghg
     </div>
   </section>
-  <div class="content__powerbeats">
+
+  <section class="content__powerbeats">
 
     <div class="content__powerbeats powerbeats-image">
 
@@ -62,9 +66,9 @@
         <span>$60 Apple Music gift card with purchase of select Beats products.*</span>
       </ul>
     </div>
+  </section>
   </div>
-  </div>
-  <div class="content__beats">
+  <section class="content__beats">
     <div class="beats-text">
       <ul>
           <li>Talk. Listen. Beats.</li>
@@ -80,11 +84,11 @@
           <input type="button" name="pods-Buy_now" value="Buy Now">
           </section>
         </ul>
-
     </div>
     <div class="beats-img"></div>
-  </div>
-  <div class="item_pods">
+  </section>
+
+  <section class="item_pods">
     <div class="item_box">
     <section class="image_title">
       <img src="../../images/imagesCards/BitmapCardOne.png" alt="CardOne">
@@ -245,8 +249,8 @@
         </section>
       </section>
     </div>
-  </div>
-<div class="last__item">
+  </section>
+<section class="last__item">
   <div class="last__item item-content">
     <ul>
   <li><span>Hear it first</span></li>
@@ -255,7 +259,7 @@
     <li><input type="submit" value="Sign up" name="submit" class="submit"></li>
   </ul>
   </div>
-</div>
+</section>
 </div>
   <%= require('html-loader!../partials/footer.html') %>
 </body>
