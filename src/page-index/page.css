@@ -1,42 +1,45 @@
 .container {
-  position: relative;
+  width: 1105px;
   margin: 0 auto;
-  background: #FFFFFF;
+  position: absolute;
+  left: 42%;
+  top: 20%;
 }
 .content__headphone {
-  position: relative;
   width: 100%;
-  height: 616px;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   background: #2B2835;
-  align-items: center;
-  justify-content:center;
+  background-size: 100%;
   flex-grow: 10px;
   color: white;
-
+  padding-bottom: 20px;
 }
 .headphone-title{
-  position:inherit;
+  align-items: flex-start;
+  position:relative;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 1px;
+
 }
 .headphone-text {
+  /* align-items: cent; */
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 43px;
-  /* or 107% */
+  display: flex;
   position: relative;
   color: #FFFFFF;
 }
 .headphone-price  {
-
+  display:inline;
   color: #FFFFFF;
   position: relative;
   font-family: Montserrat;
@@ -46,7 +49,9 @@
 }
 
 .headphone-button button{
-  position: absolute;
+  margin-top: 5px;
+  margin-right: 67%;
+  float: right;
   display: block;
   height: 41px;
   width:170px;
@@ -68,6 +73,7 @@
   border-color:#FFF;
 }
 .headphone-description{
+  align-items: center;
   position: relative;
   flex-direction: row;
   font-family: Montserrat;
@@ -79,16 +85,19 @@
   color: #00B0FF;
 }
 .headphone__image{
-  position: absolute;
-  width: 856px;
-  height: 766px;
-  left: 0px;
-  top: 0px;
-  display: block;
+position: relative;
+padding-bottom: 10px;
+height: 616px;
   }
 .wirelles_speaker {
   height: 844px;
   display: block;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 1248px;
+  display: flex;
+  height: 844px;
 }
 .content__powerbeats {
   width: 100%;
@@ -103,10 +112,13 @@
   max-width:50%;
   z-index: 10;
   display: flex;
+  position: relative;
 }
 .powerbeats-text {
   align-items: center;
   display: flex;
+  width: 100%;
+
 }
 .powerbeats-text ul{
   display: inline;
@@ -123,6 +135,11 @@
   display: flex;
 }
 .powerbeats_button input{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 27px;
   margin: auto 0;
   color: white;
   margin-left: 41px;
@@ -131,6 +148,13 @@
   background: #000000;
   border-radius: 100px;
   border:1px solid black;
+  text-transform: uppercase;
+}
+.powerbeats_button input:hover{
+  color: black;
+  background: yellow;
+
+  border:1px solid yellow;
 }
 .powerbeats_price{
   justify-content: center;
@@ -204,16 +228,19 @@
   display: grid;
   grid-template-columns: repeat(4, 290px);
   grid-auto-rows: minmax(100px, auto);
-  grid-column-gap: 20px;
+  grid-column-gap: 29px;
   grid-row-gap: 1em;
-  margin-left: 10%;
+
 }
 .image_title {
   display: block;
   position: relative;
   justify-content: center;
-
-
+}
+.wrapper-pods{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 
 }
 .item-pods_text{
@@ -222,7 +249,6 @@
   position: relative;
 }
 .text_title {
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -247,15 +273,18 @@
   font-size: 25px;
   line-height: 30px;
   color: #9D8220;
+  padding: 5px 5px;
   }
 
 .price_button {
+  padding: 5px 5px;
   position: relative;
-  display: block;
+  display: flex;
   text-align: center;
   justify-content: center;
   }
 .price_button input{
+
   position: relative;
   display: block;
   background: #000000;
@@ -279,7 +308,9 @@
   background: #F4F4F4;
   padding: 20px;
 }
-
+.item_box img {
+  height: 340px;
+}
 .footer-logo {
   margin-left: 135px;
 }
@@ -500,21 +531,19 @@
   background: url("../../images/icons/icon.svg") no-repeat;
 }
 .content__beats{
-  display: inline-grid;
-  width: 100%;
-  grid-template-columns: 844px 660px;
-  grid-auto-rows: 844px 700px;
+
+
   background: #F4F4F4;
 }
 .beats-text {
+  margin-top: 15%;
   position: relative;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 27px;
-  margin: 205px 0;
-  padding-left: 93px;
+  justify-content: center;
   color: #030303;
   background: #F4F4F4;
 }
@@ -543,6 +572,23 @@
   border-radius: 100px;
   height: 41px;
   width: 110px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+.beats_button input:hover{
+  color: black;
+  background: yellow;
+  border:1px solid yellow;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 27px;
+  text-transform: uppercase;
 }
 .beats_price{
   display: flex;
@@ -555,10 +601,13 @@
   color: #000000;
 }
 .beats-img {
+  display: flex;
   background: url("../../images/head.png")no-repeat;
-  position: relative;
-  justify-content: center;
-  right:100px;
+  position:relative;
+  height: 844px;
+  width: 1000px;
+  z-index: 10;
+
 }
 .footer-copyright {
   display: grid;

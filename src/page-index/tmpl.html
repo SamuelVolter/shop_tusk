@@ -13,30 +13,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <body>
   <%= require('html-loader!../partials/nav.html') %>
-<div class="container">
+
   <section class="content__headphone">
-    <div class="content__headphone headphone-title">
-        Beats Studio3 Wireless
+    <div class="headphone__image">
+      <img src="images/icons/headphone.png">
     </div>
-    <div class="content__headphone headphone-text">
-      Experience your<br> music like never before.
-    </div>
-    <div class="content__headphone headphone-price">
-      $299.95
-    </div>
-    <div class="content__headphone headphone-button">
-      <button class="button" type="button" name="button">buy now</button>
-    </div>
-    <div class="content__headphone headphone-description">
-      $60 Apple Music gift card with purchase of select Beats products.*
-    </div>
-  <div class="headphone__image">
-    <img src="images/icons/headphone.png">
+  <div class="container">
+
+      <div class="content__headphone headphone-title">
+          Beats Studio3 Wireless
+      </div>
+      <div class="content__headphone headphone-text">
+        Experience your<br> music like never before.
+      </div>
+
+      <div class="headphone-button">
+        <span class="headphone-price">$299.95</span>
+            <button class="button" type="button" name="button">buy now</button>
+      </div>
+      <div class="content__headphone headphone-description">
+        $60 Apple Music gift card with purchase of select Beats products.*
+      </div>
+
+
   </div>
     </section>
-
-</div>
-
   <section class="wirelles_speaker">
     <div class="wirelles_intro">
       portable wirelles_speaker
@@ -67,189 +68,186 @@
       </ul>
     </div>
   </section>
-  </div>
+
   <section class="content__beats">
-    <div class="beats-text">
-      <ul>
-          <li>Talk. Listen. Beats.</li>
-          <li><p class="title_beats">Beatsˣ<p></li>
-          <li>Up to 8 hours of battery life</li>
-          <li>With Fast Fuel, a 5-minute charge = 2 hours of playback</li>
-          <li>Sweat & water resistant</li>
-          <li>Apple W1 Chip & Class 1 Wireless Bluetooth®</li>
-          <section class="beats_button">
-            <span class="beats_price">
-              $199.95
+    <div class="wrapper">
+      <div class="beats-text">
+        <ul>
+            <li>Talk. Listen. Beats.</li>
+            <li><p class="title_beats">Beatsˣ<p></li>
+            <li>Up to 8 hours of battery life</li>
+            <li>With Fast Fuel, a 5-minute charge = 2 hours of playback</li>
+            <li>Sweat & water resistant</li>
+            <li>Apple W1 Chip & Class 1 Wireless Bluetooth®</li>
+            <section class="beats_button">
+              <span class="beats_price">
+                $199.95
+              </span>
+            <input type="button" name="pods-Buy_now" value="Buy Now">
+            </section>
+          </ul>
+      </div>
+  <div class="beats-img"></div>
+    </div>
+  </section>
+<div class="wrapper-pods">
+  <section class="item_pods">
+      <div class="item_box">
+      <section class="image_title">
+        <img src="../../images/imagesCards/BitmapCardOne.png" alt="CardOne">
+      </section>
+      <section class="item-pods_text">
+        <p class="text_title">
+          <b>Beatsˣ</b>
+        </p>
+        <span class="text_description">
+          Up to 8 hours of battery life<br>
+          With Fast Fuel, a 5-minute charge = 2 hours of playback
+        </span>
+        <section class="price_button">
+          <span class="pods_price">
+            $299.95
+          </span>
+        <input type="button" name="pods-Buy_now" value="Buy Now">
+        </section>
+      </section>
+      </div>
+      <div class="item_box">
+        <section class="image_title">
+          <img src="../../images/imagesCards/BitmapCardTwo.png" alt="CardOne">
+        </section>
+        <section class="item-pods_text">
+          <p class="text_title">
+            <b>Beatsˣ</b>
+          </p>
+          <span class="text_description">
+            Up to 8 hours of battery life<br>
+            With Fast Fuel, a 5-minute charge = 2 hours of playback
+          </span>
+          <section class="price_button">
+            <span class="pods_price">
+              $299.95
             </span>
           <input type="button" name="pods-Buy_now" value="Buy Now">
           </section>
-        </ul>
-    </div>
-    <div class="beats-img"></div>
-  </section>
-
-  <section class="item_pods">
-    <div class="item_box">
-    <section class="image_title">
-      <img src="../../images/imagesCards/BitmapCardOne.png" alt="CardOne">
-    </section>
-    <section class="item-pods_text">
-      <p class="text_title">
-        <b>Beatsˣ</b>
-      </p>
-      <span class="text_description">
-        Up to 8 hours of battery life<br>
-        With Fast Fuel, a 5-minute charge = 2 hours of playback
-      </span>
-      <section class="price_button">
-        <span class="pods_price">
-          $299.95
-        </span>
-      <input type="button" name="pods-Buy_now" value="Buy Now">
-      </section>
-    </section>
-    </div>
-    <div class="item_box">
-      <section class="image_title">
-        <img src="../../images/imagesCards/BitmapCardTwo.png" alt="CardOne">
-      </section>
-      <section class="item-pods_text">
-        <p class="text_title">
-          <b>Beatsˣ</b>
-        </p>
-        <span class="text_description">
-          Up to 8 hours of battery life<br>
-          With Fast Fuel, a 5-minute charge = 2 hours of playback
-        </span>
-        <section class="price_button">
-          <span class="pods_price">
-            $299.95
-          </span>
-        <input type="button" name="pods-Buy_now" value="Buy Now">
         </section>
-      </section>
-    </div>
-    <div class="item_box">
-      <section class="image_title">
-        <img src="../../images/imagesCards/BitmapCardThree.png" alt="CardOne">
-      </section>
-      <section class="item-pods_text">
-        <p class="text_title">
-          <b>Beatsˣ</b>
-        </p>
-        <span class="text_description">
-          Up to 8 hours of battery life<br>
-          With Fast Fuel, a 5-minute charge = 2 hours of playback
-        </span>
-        <section class="price_button">
-          <span class="pods_price">
-            $299.95
-          </span>
-        <input type="button" name="pods-Buy_now" value="Buy Now">
+      </div>
+      <div class="item_box">
+        <section class="image_title">
+          <img src="../../images/imagesCards/BitmapCardThree.png" alt="CardOne">
         </section>
-      </section>
-    </div>
-    <div class="item_box">
-      <section class="image_title">
-        <img src="../../images/imagesCards/BitmapCardFour.png" alt="CardOne">
-      </section>
-      <section class="item-pods_text">
-        <p class="text_title">
-          <b>Beatsˣ</b>
-        </p>
-        <span class="text_description">
-          Up to 8 hours of battery life<br>
-          With Fast Fuel, a 5-minute charge = 2 hours of playback
-        </span>
-        <section class="price_button">
-          <span class="pods_price">
-            $299.95
+        <section class="item-pods_text">
+          <p class="text_title">
+            <b>Beatsˣ</b>
+          </p>
+          <span class="text_description">
+            Up to 8 hours of battery life<br>
+            With Fast Fuel, a 5-minute charge = 2 hours of playback
           </span>
-        <input type="button" name="pods-Buy_now" value="Buy Now">
+          <section class="price_button">
+            <span class="pods_price">
+              $299.95
+            </span>
+          <input type="button" name="pods-Buy_now" value="Buy Now">
+          </section>
         </section>
-      </section>
-    </div>
-    <div class="item_box">
-      <section class="image_title">
-        <img src="../../images/imagesCards/BitmapCardFive.png" alt="CardOne">
-      </section>
-      <section class="item-pods_text">
-        <p class="text_title">
-          <b>Beatsˣ</b>
-        </p>
-        <span class="text_description">
-          Up to 8 hours of battery life<br>
-          With Fast Fuel, a 5-minute charge = 2 hours of playback
-        </span>
-        <section class="price_button">
-          <span class="pods_price">
-            $299.95
+      </div>
+      <div class="item_box">
+        <section class="image_title">
+          <img src="../../images/imagesCards/BitmapCardFour.png" alt="CardOne">
+        </section>
+        <section class="item-pods_text">
+          <p class="text_title">
+            <b>Beatsˣ</b>
+          </p>
+          <span class="text_description">
+            Up to 8 hours of battery life<br>
+            With Fast Fuel, a 5-minute charge = 2 hours of playback
           </span>
-        <input type="button" name="pods-Buy_now" value="Buy Now">
+          <section class="price_button">
+            <span class="pods_price">
+              $299.95
+            </span>
+          <input type="button" name="pods-Buy_now" value="Buy Now">
+          </section>
         </section>
-      </section>
+      </div>
+      <div class="item_box">
+        <section class="image_title">
+          <img src="../../images/imagesCards/BitmapCardFive.png" alt="CardOne">
+        </section>
+        <section class="item-pods_text">
+          <p class="text_title">
+            <b>Beatsˣ</b>
+          </p>
+          <span class="text_description">
+            Up to 8 hours of battery life<br>
+            With Fast Fuel, a 5-minute charge = 2 hours of playback
+          </span>
+          <section class="price_button">
+            <span class="pods_price">
+              $299.95
+            </span>
+          <input type="button" name="pods-Buy_now" value="Buy Now">
+          </section>
+        </section>
+      </div>
+      <div class="item_box">
+        <section class="image_title">
+          <img src="../../images/imagesCards/BitmapCardSix.png" alt="CardOne">
+        </section>
+        <section class="item-pods_text">
+          <p class="text_title">
+            <b>Beatsˣ</b>
+          </p>
+          <span class="text_description">
+            Up to 8 hours of battery life<br>
+            With Fast Fuel, a 5-minute charge = 2 hours of playback
+          </span>
+          <section class="price_button">
+            <span class="pods_price">
+              $299.95
+            </span>
+          <input type="button" name="pods-Buy_now" value="Buy Now">
+          </section>
+        </section>
+      </div>
+      <div class="item_box">
+        <section class="image_title">
+          <img src="../../images/imagesCards/BitmapCardTwo.png" alt="CardOne">
+        </section>
+        <section class="item-pods_text">
+          <p class="text_title">
+            <b>Beatsˣ</b>
+          </p>
+          <span class="text_description">
+            Up to 8 hours of battery life<br>
+            With Fast Fuel, a 5-minute charge = 2 hours of playback
+          </span>
+          <section class="price_button">
+            <span class="pods_price">
+              $299.95
+            </span>
+          <input type="button" name="pods-Buy_now" value="Buy Now">
+          </section>
+        </section>
     </div>
     <div class="item_box">
       <section class="image_title">
         <img src="../../images/imagesCards/BitmapCardSix.png" alt="CardOne">
       </section>
       <section class="item-pods_text">
-        <p class="text_title">
-          <b>Beatsˣ</b>
-        </p>
-        <span class="text_description">
-          Up to 8 hours of battery life<br>
-          With Fast Fuel, a 5-minute charge = 2 hours of playback
-        </span>
+          <p class="text_title"><b>Beatsˣ</b></p>
+          <span class="text_description">
+Up to 8 hours of battery life<br>With Fast Fuel, a 5-minute charge = 2 hours of playback</span>
         <section class="price_button">
-          <span class="pods_price">
-            $299.95
-          </span>
-        <input type="button" name="pods-Buy_now" value="Buy Now">
-        </section>
-      </section>
-    </div>
-    <div class="item_box">
-      <section class="image_title">
-        <img src="../../images/imagesCards/BitmapCardTwo.png" alt="CardOne">
-      </section>
-      <section class="item-pods_text">
-        <p class="text_title">
-          <b>Beatsˣ</b>
-        </p>
-        <span class="text_description">
-          Up to 8 hours of battery life<br>
-          With Fast Fuel, a 5-minute charge = 2 hours of playback
-        </span>
-        <section class="price_button">
-          <span class="pods_price">
-            $299.95
-          </span>
-        <input type="button" name="pods-Buy_now" value="Buy Now">
-        </section>
-      </section>
-    </div>
-    <div class="item_box">
-      <section class="image_title">
-        <img src="../../images/imagesCards/BitmapCardSix.png" alt="CardOne">
-      </section>
-      <section class="item-pods_text">
-        <p class="text_title">
-          <b>Beatsˣ</b>
-        </p>
-        <span class="text_description">
-          Up to 8 hours of battery life<br>
-          With Fast Fuel, a 5-minute charge = 2 hours of playback
-        </span>
-        <section class="price_button">
-          <span class="pods_price">
-            $299.95
-          </span>
-        <input type="button" name="pods-Buy_now" value="Buy Now">
+          <span class="pods_price">$299.95</span>
+          <input type="button" name="pods-Buy_now" value="Buy Now">
         </section>
       </section>
     </div>
   </section>
+  </div>
 <section class="last__item">
   <div class="last__item item-content">
     <ul>
