@@ -1,8 +1,8 @@
 .container {
-  width: 1105px;
+  /* width: 1105px; */
   margin: 0 auto;
   position: absolute;
-  left: 42%;
+  left: 48%;
   top: 20%;
 }
 .content__headphone {
@@ -50,7 +50,7 @@
 
 .headphone-button button{
   margin-top: 5px;
-  margin-right: 67%;
+  margin-right: 115px;
   float: right;
   display: block;
   height: 41px;
@@ -73,6 +73,7 @@
   border-color:#FFF;
 }
 .headphone-description{
+  margin-top: 17px;
   align-items: center;
   position: relative;
   flex-direction: row;
@@ -89,10 +90,127 @@ position: relative;
 padding-bottom: 10px;
 height: 616px;
   }
-.wirelles_speaker {
+.wirelles__speaker {
   height: 844px;
   display: block;
+  position: relative;
+  margin-top:15%;
 }
+.wirelles-wrapper {
+  margin: 0 auto;
+  width: 1248px;
+  display: grid;
+  grid-template-columns: 474px 755px;
+  grid-template-rows: 381px 755px;
+}
+.wirelles-speaker {
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+}
+.wirelles-description{
+  order: 1;
+  color: #2B2835;
+}
+.wirelles-title {
+  margin: 7px 0;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 55px;
+  color: #2B2835;
+}
+.wirelles-subtitle {
+  margin: 20px 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 55px;
+  color: #2B2835;
+}
+.wirelless-colors img{
+  display: grid;
+  order: 2;
+}
+.wirelles-color {
+  margin: 11px 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2B2835;
+}
+.wirelles-rectangl {
+  display: flex;
+}
+.item-color {
+  border-radius: 100px;
+  background: #FFFFFF;
+  border: 1px solid white;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+  height: 37px;
+  width: 37px;
+}
+.item-color2 {
+  margin-left: 10px;
+  position: relative;
+  height: 37px;
+  width: 37px;
+  border-radius: 100px;
+  background-color: red;
+  border: 1px solid red;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+}
+
+.item-color3 {
+  margin-left: 10px;
+  border-radius: 100px;
+  height: 37px;
+  width: 37px;
+  background: #000000;
+  border: 1px solid black;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+}
+.wirelles_button {
+  margin-top: 51px;
+  display: flex;
+}
+.wirelles_button input {
+  margin-top: 5px;
+  display: block;
+  text-transform: uppercase;
+  margin-left: 41px;
+  color: white;
+  height: 41px;
+  width: 120px;
+  background: #000000;
+  border-radius: 100px;
+}
+.wirelles_button input:hover {
+  color: black;
+  background: yellow;
+  border:1px solid yellow;
+}
+.wirelles_price {
+  display: block;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+}
+.wirelles-info {
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+
 .wrapper {
   margin: 0 auto;
   width: 1248px;
@@ -153,7 +271,6 @@ height: 616px;
 .powerbeats_button input:hover{
   color: black;
   background: yellow;
-
   border:1px solid yellow;
 }
 .powerbeats_price{
@@ -226,14 +343,14 @@ height: 616px;
 }
 .item_pods {
   display: grid;
-  grid-template-columns: repeat(4, 290px);
+  grid-template-columns: repeat(4, 316px);
   grid-auto-rows: minmax(100px, auto);
   grid-column-gap: 29px;
   grid-row-gap: 1em;
 
 }
 .image_title {
-  display: block;
+  display: flex;
   position: relative;
   justify-content: center;
 }
@@ -284,7 +401,11 @@ height: 616px;
   justify-content: center;
   }
 .price_button input{
-
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: uppercase;
   position: relative;
   display: block;
   background: #000000;
@@ -304,12 +425,13 @@ height: 616px;
   border: solid 1px blue;
 }
 .item_box {
+
   position: relative;
   background: #F4F4F4;
   padding: 20px;
 }
 .item_box img {
-  height: 340px;
+  height: 17em;
 }
 .footer-logo {
   margin-left: 135px;
@@ -605,9 +727,9 @@ height: 616px;
   background: url("../../images/head.png")no-repeat;
   position:relative;
   height: 844px;
-  width: 1000px;
+  width: 800px;
   z-index: 10;
-
+  align-items: flex-end;
 }
 .footer-copyright {
   display: grid;
@@ -626,7 +748,7 @@ height: 616px;
   font-size: 12px;
   line-height: 15px;
   padding: 0 20px;
-  width: 100%;
+  width: 346px;
   color: #FFFFFF;
   mix-blend-mode: normal;
   opacity: 0.31;
