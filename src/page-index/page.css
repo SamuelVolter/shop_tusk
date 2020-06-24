@@ -91,7 +91,7 @@ padding-bottom: 10px;
 height: 616px;
   }
 .wirelles__speaker {
-  height: 844px;
+  height: 644px;
   display: block;
   position: relative;
   margin-top:15%;
@@ -100,8 +100,12 @@ height: 616px;
   margin: 0 auto;
   width: 1248px;
   display: grid;
-  grid-template-columns: 474px 755px;
-  grid-template-rows: 381px 755px;
+  grid-template-columns: 572px 531px;
+  grid-template-rows: 484px auto;
+}
+.wirelles-wrapper img {
+width: 100%;
+height: 100%;
 }
 .wirelles-speaker {
   font-family: Montserrat;
