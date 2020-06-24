@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/page-catalog/catalog.css">
-    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="page-catalog/catalog.css">
+    <title>test</title>
   </head>
   <body>
-<h1>test</h1>
+
+    <%= require('html-loader!../partials/nav.html') %>
+
+  <header class="header">
+    <div class="wrapper">
+      <div class="container">
+        <section class="aside">
+          <p class="aside__title">earphones</p>
+          <p class="aside__subtitle">price</p>
+          <div class="price__switch">
+            <input type="range" min="10" max="3000" step="1" value="50">
+          </div>
+          <div class="aside__checkbox">
+            <input type="checkbox" name="sale" value="checked">Sale
+            <input type="checkbox" name="new" value="1">New
+          </div>
+          <div class="aside__colors">
+            <p class="aside__colors colors-title">Color</p>
+            <div class="aside__elements">
+              <div class="aside__elements"></div>
+                    <div class="aside__elements"></div>
+                    <div class="aside__elements"></div>
+                    <div class="aside__elements"></div>
+                    <div class="aside__elements"></div>
+                    <div class="aside__elements"></div>
+                    <div class="aside__elements"></div>
+                    <div class="aside__elements"></div>
+                    <div class="aside__elements"></div>
+                    <div class="aside__elements"></div>
+            </div>
+          </div>
+          <div class="aside__type">
+              <p class="aside__type type-title">Type</p>
+            <div class="aside__type aside-select">
+              <select>
+                  <option value="">Closed-Back </option>
+                  <option value="">Open-Back</option>
+                  <option value="">On-Ear</option>
+                  <option value="">Over-Ear </option>
+                  <option value="">In-Ear</option>
+                  <option value="">Earbuds</option>
+              </select>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </header>
+
+    <%= require('html-loader!../partials/footer.html') %>
   </body>
-</html>
+  </html>
