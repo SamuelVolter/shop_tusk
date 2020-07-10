@@ -9,7 +9,7 @@ body {
 }
 .nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color:rgba(25, 23, 32, 0.47);
     margin: 0 auto;
     width: 100%;
@@ -45,21 +45,17 @@ body {
                 background: url("../images/icons/loop.svg")no-repeat;
                 height: 50px;
                 width: 50px;
-                
-   
             }
             .logo-Two {
                 box-sizing: border-box;
                 background: url("../images/icons/icon.svg")no-repeat;
                 height: 50px;
                 width: 50px;
-     
             }
             .logo-Three {
                 background: url("../images/icons/Shape.svg")no-repeat;
                 height: 50px;
                 width: 50px;
-
             }
         }
         .nav__logo {
@@ -75,15 +71,20 @@ body {
         }
         
         @media (max-width:768px) {
-
+            .nav {
+                display: flex;
+                
+            }
             .menu {
-              display: none;
+            display: none;
+            
             }
             .trigger {
-                align-items: center;
-                justify-content: center;
-                z-index: 100;
-                padding: 5px;
+                float: left;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            padding: 5px;
               display: flex;
               flex-direction: column;
               margin: 3px;
@@ -98,11 +99,32 @@ body {
               background:white;
             }
             .show {
-              display: block;
+            padding: 68px 0;
+              display: flex;
+              position: absolute;
+              height: 600px;
+              align-items: flex-start;
+              flex-direction: column;
+              justify-content: flex-start;
+              line-height: 36px;
             }
             .sub-logo {
                 position: relative;   
-              
+            }
+            .nav__logo {
+                display: flex;
+                justify-content: flex-start;
+                position: absolute;
+                margin-left: 25px;
+            }
+            .logo-One {
+                display: none;
+            }
+            .logo-Two {
+                filter:hue-rotate(500deg) brightness(9.5) saturate(600%);
+            }
+            .logo-Three {
+                filter:hue-rotate(500deg) brightness(9.5) saturate(600%);
             }
 
           }    
