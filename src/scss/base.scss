@@ -67,7 +67,9 @@ body {
             top: 10px;
             height: 56px;
             width: 56px;
-            background: url("../images/page.png")no-repeat;
+            background: url("../images/logo.png")no-repeat;
+            border: blue solid 2px;
+            
         }
         
         @media (max-width:768px) {
