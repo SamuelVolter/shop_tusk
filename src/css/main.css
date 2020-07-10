@@ -1,53 +1,18 @@
 * {
   box-sizing: border-box;
-  max-width: 100%;
+  font-family: Montserrat;
+  font-style: normal;
 }
-body {
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
 
+body {
+font-weight: bold;
 }
 input, button {
   cursor: pointer;
 }
 ul {
   list-style: none;
-  /* padding:0 60px; */
-  /* margin-left: 50px; */
 }
-
-nav > ul > li > a {
-  display: block;
-  color: white;
-  font-size: 15px;
-  padding: 17px 60px;
-  line-height: 15px;
-  text-decoration: none;
-  font-family: Montserrat;
-  letter-spacing: 2px;
-  font-style: normal;
-  font-weight: 400;
-
-}
-
-.page-title {
-  font-size: 6em;
-  font-weight: bold;
-  text-align: center;
-  word-break: break-all;
-  line-height: 0.85;
-}
-
-.page-title > i {
-  display: block;
-  font-size: 2em;
-  margin-bottom: 0.3em;
-}
-
-
-
-
 .spacer {
   flex: 2 1 auto;
 }

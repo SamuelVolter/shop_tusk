@@ -1,0 +1,109 @@
+
+$bg-color: pink;
+body {
+ background: $bg-color;
+}
+.container {
+    width: 1248px;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color:rgba(25, 23, 32, 0.47);
+    margin: 0 auto;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    height: 70px;
+        ul {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 1.90909px;
+          }
+          a {
+            color: white;
+            text-decoration: none;
+
+            padding: 0 10px;
+        }
+        .menu {
+            align-items:center;
+            
+        }
+        .sub-logo {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            top: 10px;
+            .logo-One {
+                background: url("../images/icons/loop.svg")no-repeat;
+                height: 50px;
+                width: 50px;
+                
+   
+            }
+            .logo-Two {
+                box-sizing: border-box;
+                background: url("../images/icons/icon.svg")no-repeat;
+                height: 50px;
+                width: 50px;
+     
+            }
+            .logo-Three {
+                background: url("../images/icons/Shape.svg")no-repeat;
+                height: 50px;
+                width: 50px;
+
+            }
+        }
+        .nav__logo {
+            left: 5%;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            top: 10px;
+            height: 56px;
+            width: 56px;
+            background: url("../images/page.png")no-repeat;
+        }
+        
+        @media (max-width:768px) {
+
+            .menu {
+              display: none;
+            }
+            .trigger {
+                align-items: center;
+                justify-content: center;
+                z-index: 100;
+                padding: 5px;
+              display: flex;
+              flex-direction: column;
+              margin: 3px;
+              cursor: pointer;
+              left: 20%;
+            }
+            .trigger i {
+              display: block;
+              width: 30px;
+              height: 6px;
+              margin: 4px auto;
+              background:white;
+            }
+            .show {
+              display: block;
+            }
+            .sub-logo {
+                position: relative;   
+              
+            }
+
+          }    
+}

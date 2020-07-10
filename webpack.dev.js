@@ -31,10 +31,11 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/i,
+        test: /\.(css|scss)(\?.*)?$/i,
         use: [
           'style-loader',
-          'css-loader'
+          'css-loader',
+          'sass-loader'
           // Please note we are not running postcss here
         ]
       },
