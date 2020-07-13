@@ -1,90 +1,5 @@
 
 
-.content__headphone {
-  width: 100%;
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  background: #2B2835;
-  background-size: 100%;
-  flex-grow: 10px;
-  color: white;
-  padding-bottom: 20px;
-}
-.headphone-title{
-  align-items: flex-start;
-  position:relative;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 1px;
-
-}
-.headphone-text {
-  /* align-items: cent; */
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 43px;
-  display: flex;
-  position: relative;
-  color: #FFFFFF;
-}
-.headphone-price  {
-  display:inline;
-  color: #FFFFFF;
-  position: relative;
-  font-family: Montserrat;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 49px;
-}
-
-.headphone-button button{
-  margin-top: 5px;
-  margin-right: 115px;
-  float: right;
-  display: block;
-  height: 41px;
-  width:170px;
-  color: black;
-  background: #00B0FF;
-  border-radius: 100px;
-  text-transform: uppercase;
-  font-style:bold;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  border-color:#00B0FF;
-}
-
-.button:hover{
-  background: white;
-  color: black;
-  border-color:#FFF;
-}
-.headphone-description{
-  margin-top: 17px;
-  align-items: center;
-  position: relative;
-  flex-direction: row;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 20px;
-  /* identical to box height, or 151% */
-  color: #00B0FF;
-}
-.headphone__image{
-position: relative;
-padding-bottom: 10px;
-height: 616px;
-  }
 .wirelles__speaker {
   height: 644px;
   display: block;
@@ -232,13 +147,13 @@ line-height: 20px;
 .content__powerbeats {
   width: 100%;
   height: 844px;
-  background: url("../../images/background.png") no-repeat;
+  background: url("../images/background.png") no-repeat;
   display: flex;
   z-index: 10;
   background-size: cover;
 }
 .powerbeats-image {
-  background: url("../../images/powerbeats.png")no-repeat;
+  background: url("../images/powerbeats.png")no-repeat;
   -webkit-background-size: 100%;
   background-size: 80%;
   min-width: 250px;
@@ -595,45 +510,7 @@ z-index: 10;
   color: #FFFFFF;
 }
 
-.search-icon {
-  background: url("../../images/icons/loop.svg")no-repeat ;
-  position: fixed;
-  display: block;
-  width: 25px;
-  height: 25px;
-  margin: 28px -200px;
-  z-index: 10;
-}
-.user-icon {
-  display: block;
-  position: fixed;
-  margin: 28px -130px;
-  width: 25px;
-  height: 25px;
-  z-index: 10;
-  background: url("../../images/icons/icon.svg") no-repeat;
-}
-.shape-icon {
-  position: fixed;
-  width: 25px;
-  margin: 28px -50px;
-  height: 25px;
-  display:block;
-  z-index: 10;
-  background: url("../../images/icons/Shape.svg")no-repeat;
-}
-.logo-dot {
-  position: fixed;
-  background: url("../../images/icons/logocircus.svg") no-repeat;
-  left:111px;
-  top:30px;
-}
-.user-icon {
-  background: url("../../images/icons/icon.svg") no-repeat;
-}
 .content__beats{
-
-
   background: #F4F4F4;
 }
 .beats-text {
@@ -703,7 +580,7 @@ z-index: 10;
 }
 .beats-img {
   display: flex;
-  background: url("../../images/head.png")no-repeat;
+  background: url("../images/head.png")no-repeat;
   position:relative;
   height: auto;
   width: 40%;
