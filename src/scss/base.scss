@@ -293,12 +293,11 @@ body {
   .powerbeats-wrapper {
       padding: 20px 0;
       display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2,671px);
       grid-template-rows: 800px;
   }
   .powerbeats-image {
     background: url("../images/powerbeats.png")no-repeat;
-    -webkit-background-size: 100%;
     width: 100%;
     min-width: 360px;
     z-index: 10;
@@ -383,8 +382,98 @@ body {
           order: 2;
       }
   }
+//  СCONTENT BEATS
+.content__beats{
+    position: relative;
+    width:100%;
+    height: 844px;
+    background: #F4F4F4;
+    mix-blend-mode: normal;
+    display: block;
+    z-index: 10;
 
- 
+.beats-wrapper {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    height: 844px;
+    .beats-text {
+        margin-top: 15%;
+        position: relative;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 27px;
+        justify-content: center;
+        color: #030303;
+        background: #F4F4F4;
+      }
+      .title_beats {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 55px;
+        /* identical to box height, or 110% */
+        margin: 20px 0;
+        color: #2B2835;
+        }
+      .beats_button {
+        display: flex;
+        padding: 86px 0;
+      }
+      .beats_button input{
+        padding: 5px 5px;
+        margin: 5px 5px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        border:solid 1px black;
+        background: #000000;
+        border-radius: 100px;
+        height: 41px;
+        width: 110px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 27px;
+        text-transform: uppercase;
+      }
+      .beats_button input:hover{
+        color: black;
+        background: yellow;
+        border:1px solid yellow;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 27px;
+        text-transform: uppercase;
+      }
+      .beats_price{
+        display: flex;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 49px;
+        /* identical to box height */
+        color: #000000;
+      }
+      .beats-img {
+        display: flex;
+        background: url("../images/head.png")no-repeat;
+        position:relative;
+        height: auto;
+        width: 100%;
+        min-width: 200px;
+        z-index: 10;
+        align-items: flex-end;
+      }
+  }
+}
 //  KARTOCHKI MEDIA 
 @media  (max-width:1248px){
     .item_pods {
