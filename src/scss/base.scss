@@ -70,7 +70,7 @@ body {
             height: 56px;
             width: 56px;
             background: url("../images/logo.png")no-repeat;
-            border: blue solid 2px;
+            
             
         }
         
@@ -140,7 +140,6 @@ body {
     height: 616px;
 
     .wrapper-headphone {
-        
         float: right;
         display: flex;
         flex-direction: column;
@@ -153,7 +152,7 @@ body {
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
-        color: white;
+            color: #F2F2F2;
           font-weight: 500;
           font-size: 16px;
           line-height: 20px;
@@ -163,39 +162,52 @@ body {
           display: flex;
           font-weight: bold;
           font-size: 40px;
+          margin: 0;
           line-height: 43px;
           position: relative;
           color: #FFFFFF;
         }
-        .headphone-price  {
-          color: #FFFFFF;
-          font-weight: normal;
-          font-size: 40px;
-          line-height: 49px;
-        }
+        .headphone-button {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px 0;
+            .headphone-price  {
+            margin-right: 10%;
+            display: flex;
+            color: #F2F2F2;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 49px;
+            justify-content: center;
+            align-items: center;
+            }
+            button{
+             
+              height: 41px;
+              width:170px;
+              color: black;
+              background: #00B0FF;
+              border-radius: 100px;
+              text-transform: uppercase;
+              font-style:bold;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 17px;
+              border-color:#00B0FF;
+            }
 
-        .headphone-button button{
-        float: right;
-          height: 41px;
-          width:170px;
-          color: black;
-          background: #00B0FF;
-          border-radius: 100px;
-          text-transform: uppercase;
-          font-style:bold;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 17px;
-          border-color:#00B0FF;
         }
+ 
+    
         .button:hover{
           background: white;
           color: black;
           border-color:#FFF;
         }
         .headphone-description{
-          margin-top: 17px;
+          margin:0;
           align-items: center;
           position: relative;
           flex-direction: row;
@@ -210,39 +222,168 @@ body {
     .headphone-image{
         position: absolute;
         display: flex;
-        width: 100%;
-        max-width: 755px;
+        max-width: 800px;
         }
         img {
             display: block;
-            max-width: 95%;
-            width: 700px;
+            max-width: 800px;
+            width: 100%;
+            top: 0;
+            left: 0;
         }
         @media (max-width:1248px) {
             .headphone-image {
                 align-items: center;
             }
-            .wrapper-headphone {
-                
-            }
         }
-        @media (max-width:768px) {
+        @media (max-width:1196px) {
             .headphone-image {
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
                 width: 100%;
                 padding: 5px;
                 z-index: 1;
                 order: 1;
+                height: auto;
+                .img {
+                    width: 100%;
+                    height: auto;
+                }
             }
             .wrapper-headphone {
+                color: black;
                 position: relative;
-                margin-top: 300px;
+                margin-top: 100px;
                 order: 2;
-                
+                width: 100%;
+                .headphone-description {
+                    color: black;
+                }
+                .headphone-price {
+                    color: black;
+                }
+                .headphone-text {
+                    color: black;
+                }
+                .headphone-title {
+                    color: black;
+                }
+                .headphone-button {
+                    .headphone-price  {
+                        color: black;
+                    }
+
+                }
+               
             }
         }
   }
 
- 
+// POWERBEATS
+.content__powerbeats {
+    width: 100%;
+    height: 844px;
+    background: url("../images/background.png") no-repeat;
+    display: flex;
+    z-index: 10;
+    background-size: cover;
+  }
+  .powerbeats-wrapper {
+      padding: 20px 0;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: 800px;
+  }
+  .powerbeats-image {
+    background: url("../images/powerbeats.png")no-repeat;
+    -webkit-background-size: 100%;
+    width: 100%;
+    min-width: 360px;
+    z-index: 10;
+    display: grid;
+    position: relative;
+    
+  }
+  .powerbeats-text {
+    align-items: center;
+    display: flex;
+    width: 100%;
+  }
+  .powerbeats-text ul{
+    display: inline;
+    flex-direction: row;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 27px;
+    color: white;
+  }
+  .powerbeats_button {
+    padding-top: 70px;
+    display: flex;
+  }
+  .powerbeats_button input{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 27px;
+    margin: auto 0;
+    color: white;
+    margin-left: 41px;
+    width: 170px;
+    height: 41px;
+    background: #000000;
+    border-radius: 100px;
+    border:1px solid black;
+    text-transform: uppercase;
+  }
+  .powerbeats_button input:hover{
+    color: black;
+    background: yellow;
+    border:1px solid yellow;
+  }
+  .powerbeats_price{
+    justify-content: center;
+    margin: auto 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFF00;
+  }
+  .powerbeats-title {
+    position: relative;
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+    text-transform: uppercase;
+  }
+  @media (max-width:1247px){
+      .powerbeats-wrapper {
+          grid-template-columns: 1fr;
+          grid-template-rows: 375px;
+      }
+      .powerbeats-image{
+          z-index: 200;
+          order: 1;
+          min-width: 360px;
+          width: 100%;
+      }
+      .powerbeats-text{
+          order: 2;
+      }
+  }
+
  
 //  KARTOCHKI MEDIA 
 @media  (max-width:1248px){
