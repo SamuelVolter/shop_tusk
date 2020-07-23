@@ -3,6 +3,17 @@ $bg-color: pink;
 body {
  background: $bg-color;
 }
+.button {
+    border-radius: 100px;
+    text-transform: uppercase;
+    color: white;
+    &_black {
+        background-color: black;
+        &:hover {
+            background-color: blue;
+        }
+    }
+} 
 .container {
     margin: 0 auto;
     width: 100%;
@@ -280,7 +291,145 @@ body {
             }
         }
   }
+// WIRELLES SPEAKER
+.wirelles__speaker {
+  position: relative;
+}
+.wirelles-wrapper {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+}
 
+.wirelles-wrapper img {
+width: 100%;
+position: relative;
+height: 100%;
+}
+.wirelles-speaker {
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+}
+.wirelless-description{
+  color: #2B2835;
+}
+.wirelles-title {
+  margin: 7px 0;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 55px;
+  color: #2B2835;
+}
+.wirelles-subtitle {
+  margin: 20px 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 55px;
+  color: #2B2835;
+}
+.wirelless-colors {
+  width: 100%;
+  position: relative;
+}
+.wirelless-colors img{
+  min-width: 360px;
+  width: 100%;
+  position: relative;
+  background-size: contain;
+}
+.wirelles-color {
+  margin: 11px 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2B2835;
+}
+.wirelles-rectangl {
+  display: flex;
+}
+.item-color {
+  border-radius: 100px;
+  background: #FFFFFF;
+  border: 1px solid white;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+  height: 37px;
+  width: 37px;
+}
+.item-color2 {
+  margin-left: 10px;
+  position: relative;
+  height: 37px;
+  width: 37px;
+  border-radius: 100px;
+  background-color: red;
+  border: 1px solid red;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+}
+
+.item-color3 {
+  margin-left: 10px;
+  border-radius: 100px;
+  height: 37px;
+  width: 37px;
+  background: #000000;
+  border: 1px solid black;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+}
+.wirelles_button {
+  margin-top: 51px;
+  display: flex;
+}
+.wirelles_button input {
+  margin-top: 5px;
+  display: block;
+  text-transform: uppercase;
+  margin-left: 41px;
+  color: white;
+  height: 41px;
+  width: 120px;
+  background: #000000;
+  border-radius: 100px;
+}
+.wirelles_button input:hover {
+  color: black;
+  background: yellow;
+  border:1px solid yellow;
+}
+.wirelles_price {
+  display: block;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+}
+.wirelles-info {
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+@media (max-width:720px){
+  .wirelles-wrapper{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+  }
+.wirelless-description {
+  order:2;
+}
+}
 // POWERBEATS
 .content__powerbeats {
     width: 100%;
@@ -321,7 +470,7 @@ body {
     color: white;
   }
   .powerbeats_button {
-    padding-top: 70px;
+
     display: flex;
   }
   .powerbeats_button input{
@@ -373,6 +522,8 @@ body {
           grid-template-rows: 375px;
       }
       .powerbeats-image{
+          justify-content: center;
+          background-size: contain;
           z-index: 200;
           order: 1;
           min-width: 360px;
@@ -384,18 +535,20 @@ body {
   }
 //  СCONTENT BEATS
 .content__beats{
+  align-items: center;
     position: relative;
     width:100%;
     height: 844px;
     background: #F4F4F4;
     mix-blend-mode: normal;
-    display: block;
+    display: grid;
     z-index: 10;
 
 .beats-wrapper {
     width: 100%;
-    display: flex;
-    height: 844px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     .beats-text {
         position: relative;
         font-family: Montserrat;
@@ -419,7 +572,7 @@ body {
         }
       .beats_button {
         display: flex;
-        padding: 86px 0;
+        
       }
       .beats_button input{
         padding: 5px 5px;
@@ -461,17 +614,195 @@ body {
         color: #000000;
       }
       .beats-img {
-        display: flex;
+        display: block;
         background: url("../images/head.png")no-repeat;
-        position:relative;
         height: auto;
-        width: 54%;
-        min-width: 200px;
+        width: 100%;
+        min-width: 360px;
         z-index: 10;
-        align-items: flex-end;
-      }
+        background-size: contain;
+      } 
   }
+  @media (max-width:666px){
+    .beats-wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .beats-text {
+      order:2;
+    }
+    .beats-img {
+      order:1;
+    }
+  }
+
+  
 }
+// CARDS
+.product {
+    
+    position: relative;
+    background: #F4F4F4;
+    padding: 20px;
+
+    &__text {    
+        margin-top: 30px;
+        display: block;
+        position: relative;
+    }
+
+    &__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 55px;
+        color: #2B2835;
+    }
+    &__img{
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+
+    &__description {
+        display: block;
+        padding: 5px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        color: #030303;
+    }
+
+    &__footer {
+        padding: 5px 5px;
+        position: relative;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    &__price {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        color: #9D8220;
+        padding: 5px 5px;
+    }
+    
+    &__button {
+        text-transform: uppercase;
+        position: relative;
+        background: #000000;
+        height: 41px;
+        padding: 10px 36px;
+        border: solid 1px black;
+        border-radius: 100px;
+        color: white;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+.item_pods {
+    justify-content: center;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 29px;
+    grid-row-gap: 1em;
+  }
+  
+  .image_title {
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+  .wrapper-pods{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  z-index: 10;
+  }
+  .item-pods_text{
+    margin-top: 30px;
+    display: block;
+    position: relative;
+  }
+  .text_title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 55px;
+    color: #2B2835;
+  }
+  .text_description{
+    display: block;
+    padding:5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #030303;
+    }
+  .pods_price{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #9D8220;
+    padding: 5px 5px;
+    }
+  
+  .price_button {
+    padding: 5px 5px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    }
+  .price_button input{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    background: #000000;
+    height: 41px;
+    width: 145px;
+    border: solid 1px black;
+    border-radius: 100px;
+    color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .price_button input:hover{
+    background: blue;
+    border: solid 1px blue;
+  }
+  .item_box {
+    position: relative;
+    background: #F4F4F4;
+    padding: 20px;
+  }
+  .item_box img {
+    height: 17em;
+  }
 //  KARTOCHKI MEDIA 
 @media  (max-width:1248px){
     .item_pods {
